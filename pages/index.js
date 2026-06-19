@@ -207,14 +207,14 @@ export default function Home() {
                     <thead>
                       <tr style={{ background: '#1F3864' }}>
                         {["Angle d'analyse","EVM Classique","EVM+ Révèle","Interprétation"].map(h => (
-                          <th key={h} className="px-4 py-2 text-left text-xs text-white/70 font-semibold"
-                              style={{ borderBottom: '1px solid rgba(255,255,255,0.1)' }}>{h}</th>
-                        ))}
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {[
-                        ['Coût','CPI = 0.824 → dérive 17.6%','n(CPI) = 0.824 intégré dans EVM+_CT','Dérive réelle capturée dans les deux'],
+  <th
+    key={h}
+    className="px-4 py-2 text-left text-xs text-white/70 font-semibold"
+    style={{ borderBottom: '1px solid rgba(255,255,255,0.1)' }}
+  >
+    {h}
+  </th>
+))}                        ['Coût','CPI = 0.824 → dérive 17.6%','n(CPI) = 0.824 intégré dans EVM+_CT','Dérive réelle capturée dans les deux'],
                         ['Délai','SPI = 0.921 → retard 7.9%','n(SPI) = 0.921 intégré dans EVM+_CT','Retard modéré dans les tolérances'],
                         ['Qualité','❌ NON MESURÉ — angle mort total','EVM+_Q = 0.788 (QOP+QFC+QIT)','⚡ Zone d\'invisibilité principale'],
                         ['Masse salariale','≈ 12.18 MMAD → EV = 0','QFC_CT = 0.891 capture cette valeur','25% du BAC ignoré par l\'EVM'],
